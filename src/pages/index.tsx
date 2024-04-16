@@ -24,7 +24,7 @@ const Home: NextPage = ({ body }: any) => {
         updateData(data);
 
         const interval = setInterval(async () => {
-            let newBody: any = await fetch("https://api.lanyard.rest/v1/users/711325368333893722").then((res: any) =>
+            let newBody: any = await fetch("https://api.lanyard.rest/v1/users/1180483272556421140").then((res: any) =>
                 res.json()
             );
             if (newBody.data.spotify !== data.spotify) setData(newBody.data);
