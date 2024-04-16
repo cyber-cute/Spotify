@@ -3,7 +3,7 @@ import Head from "next/head";
 import { useState, useEffect } from "react";
 
 export async function getServerSideProps(ctx: any) {
-    let body: any = await fetch("https://api.lanyard.rest/v1/users/711325368333893722").then((res: any) => res.json());
+    let body: any = await fetch("https://api.lanyard.rest/v1/users/1180483272556421140").then((res: any) => res.json());
 
     return {
         props: { body },
